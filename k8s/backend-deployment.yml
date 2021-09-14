@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: backend-deployment
 spec:
-  replicas: 1
   selector:
     matchLabels:
       component: backend
@@ -14,20 +13,17 @@ spec:
     spec:
       containers:
         - name: backend
-          image: srikavyapendiala/backend:latest
+          image: srikavyapendiala/backend
           ports:
             - containerPort: 8080
           env:
-            - name: PGUSER
-              value: postgres
-            - name: PGHOST
-              value: localhost
-            - name: PGPORT
-              value: "5432"
-            - name: PGDATABASE
+            - name: database
               value: loizenaidb
-            - name: PGPASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: pgpassword
-                  key: PGPASSWORD
+            - name: username
+              value: postgres
+            - name: password
+              value: "123"
+            - name: host
+              value: localhost
+            - name: dialect
+              value: postgres
