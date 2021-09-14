@@ -2,22 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend-deployment
-  labels:
-    app: frontend
 spec:
   selector:
     matchLabels:
-      app: frontend
+      component: frontend
   template:
     metadata:
       labels:
-        app: frontend
+        component: frontend
     spec:
       containers:
         - name: frontend
           image: srikavyapendiala/frontend:latest
-          imagePullPolicy: Always
           stdin: true
           ports:
             - containerPort: 3000
-      restartPolicy: Always
