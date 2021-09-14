@@ -12,7 +12,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: frontend-cluster-service
+                name: frontend-service
                 port:
                   number: 3000
 
@@ -20,6 +20,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: backend-cluster-service
+                name: backend-service
                 port:
                   number: 8080
