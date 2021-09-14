@@ -11,9 +11,9 @@ spec:
     metadata:
       labels:
         component: postgres
-          env:
-            - name: POSTGRES_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: pgpassword
-                  key: PGPASSWORD
+            env:
+              - name: POSTGRES_PASSWORD
+                valueFrom:
+                  secretKeyRef:
+                    name: pgpassword
+                    key: PGPASSWORD    
