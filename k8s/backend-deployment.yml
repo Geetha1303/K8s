@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: srikavyapendiala/backend:latest
+          image: naveen5025/backend:v3
           ports:
             - containerPort: 8080
           env:
