@@ -9,4 +9,8 @@ spec:
   ports:
     - port: 8000
       targetPort: 8000
+      protocol: TCP
+      name: http
+  selector:
+    name: backend
 
