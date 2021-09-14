@@ -12,5 +12,5 @@ spec:
       protocol: TCP
       name: http
   selector:
-    name: backend
+    component: backend
 
