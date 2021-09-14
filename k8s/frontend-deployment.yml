@@ -17,7 +17,6 @@ spec:
         - name: frontend
           image: srikavyapendiala/frontend:latest
           imagePullPolicy: Always
-          stdin: true
           ports:
             - containerPort: 3000
       restartPolicy: Always
