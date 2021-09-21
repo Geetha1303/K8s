@@ -1,4 +1,4 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-deployment
@@ -16,9 +16,14 @@ spec:
           image: srikavyapendiala/backend
           ports:
             - containerPort: 8080
-          environment:
-            - PGDATABASE=loizenaidb
-            - PGUSER=postgres
-            - PGPASS=123
-            - PGHOST=postgres
-            - PGDIALECT=postgres
+          env:
+            - name: PGDATABASE
+            - value: loizenaidb
+            - name: PGUSER
+            - value: postgres
+            - name: PGPASS
+            - value: 123
+            - name: PGHOST
+            - value: postgres
+            - name: PGDIALECT
+            - value: postgres
