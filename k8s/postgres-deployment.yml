@@ -25,10 +25,13 @@ spec:
             - name: postgres-storage
               mountPath: /var/lib/postgresql/data
               subPath: postgres
-          environment:
-            POSTGRES_PASSWORD: 123
-            POSTGRES_USER: postgres
-            POSTGRES_DB: loizenaidb
+          env:
+            - name: POSTGRES_PASSWORD
+            - value: 123
+            - name: POSTGRES_USER
+            - value: postgres
+            - name: POSTGRES_DB
+            - value: loizenaidb
 
  
 
