@@ -17,3 +17,6 @@ spec:
           stdin: true
           ports:
             - containerPort: 3000
+          env:
+          - CONTAINER_NAME=http://backend:8080
+
