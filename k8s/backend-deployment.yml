@@ -22,7 +22,7 @@ spec:
             - name: PGUSER
               value: postgres
             - name: PGPASS
-              value: 123
+              value: "123"
             - name: PGHOST
               value: postgres
             - name: PGDIALECT
