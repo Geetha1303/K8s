@@ -16,14 +16,9 @@ spec:
           image: srikavyapendiala/backend
           ports:
             - containerPort: 8080
-          env:
-            - name: PGDATABASE
-            - value: loizenaidb
-            - name: PGUSER
-            - value: postgres
-            - name: PGPASS
-            - value: 123
-            - name: PGHOST
-            - value: postgres
-            - name: PGDIALECT
-            - value: postgres
+          environment:
+            - PGDATABASE=loizenaidb
+            - PGUSER=postgres
+            - PGPASS=123
+            - PGHOST=postgres
+            - PGDIALECT=postgres
