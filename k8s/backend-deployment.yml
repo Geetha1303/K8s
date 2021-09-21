@@ -18,12 +18,12 @@ spec:
             - containerPort: 8080
           env:
             - name: PGDATABASE
-            - value: loizenaidb
+              value: loizenaidb
             - name: PGUSER
-            - value: postgres
+              value: postgres
             - name: PGPASS
-            - value: 123
+              value: 123
             - name: PGHOST
-            - value: postgres
+              value: postgres
             - name: PGDIALECT
-            - value: postgres
+              value: postgres
