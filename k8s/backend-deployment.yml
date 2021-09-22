@@ -12,7 +12,7 @@ spec:
         component: backend
     spec:
       containers:
-        - name: reactjs-nodejs-postgres_backend
+        - name: backend
           image: srikavyapendiala/reactjs-nodejs-postgres_backend:latest
           ports:
             - containerPort: 8080
