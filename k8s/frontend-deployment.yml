@@ -12,7 +12,7 @@ spec:
         component: frontend
     spec:
       containers:
-        - name: reactjs-nodejs-postgres_frontend
+        - name: frontend
           image: srikavyapendiala/reactjs-nodejs-postgres_frontend
           stdin: true
           ports:
