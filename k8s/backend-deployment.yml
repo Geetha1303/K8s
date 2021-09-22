@@ -12,8 +12,8 @@ spec:
         component: backend
     spec:
       containers:
-        - name: reactjs-nodejs-postgres_backend
-          image: reactjs-nodejs-postgres_backend:latest
+        - name: backend
+          image: srikavyapendiala/backend
           ports:
             - containerPort: 8080
           env:
@@ -24,6 +24,6 @@ spec:
             - name: PGPASS
               value: "123"
             - name: PGHOST
-              value: postgres
+              value: postgres-service
             - name: PGDIALECT
               value: postgres
