@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: srikavyapendiala/reactjs-nodejs-postgres_backend:latest
+          image: geetha20/backend
           ports:
             - containerPort: 8080
           env:
